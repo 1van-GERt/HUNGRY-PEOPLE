@@ -1,0 +1,10 @@
+.footer_container{
+		@include container();
+		background-color: $black;
+}
+
+.footer{
+	@include container_inside();
+
+	height: auto;
+}

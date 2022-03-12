@@ -1,0 +1,9 @@
+.specialties_container{
+	background: url('./../images/specialties-bg.png');
+	background-color: $black;
+	@include container();
+}
+
+.specialties{
+	@include container_inside();	
+}

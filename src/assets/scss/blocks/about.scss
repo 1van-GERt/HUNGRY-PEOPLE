@@ -1,0 +1,7 @@
+.about_container{
+	@include container();
+}
+
+.abuot{
+	@include container_inside();
+}

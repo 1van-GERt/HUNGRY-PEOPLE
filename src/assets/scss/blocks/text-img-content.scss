@@ -1,0 +1,151 @@
+.test_container{
+	@include container_inside();
+}
+
+.test{
+
+	display: flex;
+}
+
+/* .text__white - белый шрифт text_content
+  	--left - элемент слева(поумолчанию прописанны на правую половину)
+  	в index.html test_img_content + класс блока(имг - фон блока)*/
+
+.text_content{
+
+	&>h2{
+		text-transform:uppercase;
+	}
+	margin-left: 4rem; 
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	span{
+		display: block;
+		width: 6rem;
+		height: .5rem;
+		margin: 2rem auto 3rem auto;
+		border-radius: 5rem;
+		background-color: #E8C300;
+	}
+
+	p:nth-child(3){
+		font-weight: bolder;
+		
+	}
+
+	&.text__white{
+		color: $text-white;
+	}
+
+	&--left{
+		margin: 0 4rem 0 0; 
+	}
+
+	&--center{
+		margin: 0 auto;
+	}
+}
+
+.img_content{
+	/*в index.html test_img_content + класс блока(имг - фон блока)*/
+	&.about{
+		div{
+			background: url('./../images/about-img.png') center;	
+		}	
+	}
+	&.team{
+		div{
+			background: url('./../images/team-img.png') center;	
+		}	
+	}
+	&.booking{
+		div{
+			background: url('./../images/booking-img.png') center;	
+		}	
+	}
+	&.specialties{
+		div{
+			background: url('./../images/specialties-img.png') center;	
+		}	
+	}
+		&.event1{
+		div{
+			background: url('./../images/events1-img.png') center;
+			
+		}	
+	}
+		&.event2{
+		div{
+			background: url('./../images/events2-img.png') center;	
+		}	
+	}
+
+
+
+	margin-left: 4rem; 
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	>div{
+
+		transition: all .5s ease-in-out;
+		position: relative;
+		width: 35vw;
+		max-width: 47.5rem;
+		height:  35vw;
+		max-height: 47.5rem;
+		
+		background-repeat: no-repeat;
+		background-size: 100%;
+		transition: all .5s ease-in-out;
+		&:hover{
+			transition: all .5s ease-in-out;
+			background-size: 150%;
+			img{
+				margin: 0 auto;	
+				transform: translate(-55%,0) scale(2);
+			}
+		}
+
+		
+	}
+
+	img{
+		position: absolute;
+		right: -50%;
+		width: 35vw;
+		max-width: 47.5rem;
+		height:  35vw;
+		max-height: 47.5rem;
+		transition: all .5s ease-in-out;
+	}
+
+	&--left{
+	display: flex;
+	align-items: flex-end;
+	margin: 0 4rem 0 0;
+		>div{
+			background-size: 100%;
+			transition: all .5s ease-in-out;
+			&:hover{
+				background-size: 120%;
+				img{
+					transform: translate(45%,0) scale(2);
+				}
+			}
+			img{
+				right: 50%;
+			}
+		}
+	}
+
+
+}

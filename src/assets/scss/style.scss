@@ -1,0 +1,61 @@
+
+
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "vendor/reset.scss";
+
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+
+body {
+	overflow-x: hidden;
+	/*
+		overflow: hidden;*/
+	
+    background-color: $bc-white1;
+    font-size: 21px;
+    color: $text-black;
+    font-family: Open_Sans;
+    a{
+    	text-decoration: none;
+    	cursor: pointer;
+    }
+    p{
+    	font-size: 1.4rem;
+    	line-height: 1.8rem;
+    	font-family: Open Sans;
+    }
+
+    h1{
+    	font-size: 9.6rem;
+    	
+    }
+    h2{
+    	font-size: 3.6rem;
+    	line-height: 4.8rem;
+    }
+    button{
+    	text-decoration: none;
+    	cursor: pointer;
+
+    }
+}
+
+
+
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/team";
+@import "blocks/booking";
+@import "blocks/specialties";
+@import "blocks/menu";
+@import "blocks/events";
+@import "blocks/contacts";
+@import "blocks/footer";
+
+@import "blocks/text-img-content";

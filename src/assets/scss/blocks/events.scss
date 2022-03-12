@@ -1,0 +1,44 @@
+.events_contasiner{
+	background: url('./../images/events-bg.png');
+	background-color: $black;
+	@include container();
+}
+
+.events{
+	@include container_inside();
+}
+
+.event1,
+.event2{
+	&>div{
+		position: relative;
+		&>p{
+			text-transform:uppercase;
+			font-size: 2.4rem;
+			line-height: 1.2rem;
+			box-sizing: border-box;
+			position: absolute;
+			padding: 6%;
+			text-align: left;
+			left: 42%;
+			top: 41.5%;
+			transform: rotate(90deg);
+			color: $text-white;
+			background-color: black;	
+			width: 100%;
+			height: 17%;	
+
+		}
+	}
+	
+}
+.event2{
+	&>div{
+		p{
+			transform: rotate(270deg);
+			left: -42%;
+			top: 41.5%;
+		}
+		
+	}
+}

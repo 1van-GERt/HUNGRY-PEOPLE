@@ -1,0 +1,52 @@
+.booking_container{
+	@include container();
+}
+
+.booking{
+	@include container_inside();
+	&>p{
+				color: $text-black;
+	}
+}
+
+
+.form_content{
+	&>div{
+		input,
+		select{
+			&::placeholder{
+				color: #33333380;
+			}
+			padding: 1.8rem;
+			margin: .5rem;
+			box-sizing: border-box;
+			border:none;
+			border-radius: .5rem;
+			/*height: 6rem;*/
+			width: 45%;
+
+			background-color: #E5E5E5;
+			color: #33333380;
+			option{
+				&:hover{
+					background-color: red;
+				}
+			}
+		}
+
+	}
+	button{
+			width: 94%;
+			margin: .5rem auto;
+			padding: 0;
+			height: 6rem;
+			border: none;
+			border-radius: .5rem;
+			background-color: #E5E5E5;
+		}
+	
+}
+
+.option{
+
+}

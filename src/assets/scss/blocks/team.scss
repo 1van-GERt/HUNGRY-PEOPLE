@@ -1,0 +1,9 @@
+.team_container{
+	background: url('./../images/team-bg.png');
+	background-color: $black;
+	@include container();
+}
+
+.team{
+	@include container_inside();
+}
